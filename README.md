@@ -1,2 +1,2 @@
 # Practice-cpp
-Implementing primaty operations on matrixes and practicing template and operators overloading.
+Implementing primary operations on matrices and practicing template and operators overloading.
