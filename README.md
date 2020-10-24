@@ -1,2 +1,2 @@
 # Practice-cpp
-Implementing basic operations on matrices and practicing template and operators overloading.
+Implementing basic operations on matrices and practicing template and operator overloading.
