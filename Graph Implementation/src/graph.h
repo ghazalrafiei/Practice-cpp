@@ -1,5 +1,5 @@
-#ifndef __GRAPH__
-#define __GRAPH__
+#ifndef GRAPH_H
+#define GRAPH_H
 
 #include <map>
 #include <set>
@@ -61,10 +61,10 @@ public:
   int connected_components(bool print_trace = false); // uses iterative dfs
   bool is_connected();
 
-      // void Kruskal();
-      // void dijkstra();
-      // void belman_Ford();
-      // void maxflow();
+  // void Kruskal();
+  // void dijkstra();
+  // void belman_Ford();
+  // void maxflow();
 
   friend std::ostream &operator<<(std::ostream &out, const Graph &g);
 };
