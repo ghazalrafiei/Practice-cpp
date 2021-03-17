@@ -1,5 +1,7 @@
-#include "src/graph.h"
 #include <iostream>
+
+#include "src/graph.h"
+
 
 int main() {
   unsigned test_graph_node_size = 6; // 0-base
