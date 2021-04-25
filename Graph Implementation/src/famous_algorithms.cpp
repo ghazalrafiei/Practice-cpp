@@ -6,7 +6,7 @@
 
 #include "graph.h"
 
-void Graph::recursive_DFS(dtype root, bool print_trace, std::map<dtype, bool> &marked) {
+void Graph::recursive_dfs(dtype root, bool print_trace, std::map<dtype, bool> &marked) {
 
   marked[root] = true;
 
@@ -16,7 +16,7 @@ void Graph::recursive_DFS(dtype root, bool print_trace, std::map<dtype, bool> &m
   if (adjecent[root].size()) {
     for (int adj : adjecent[root]) {
       if (!marked[adj]) {
-        recursive_DFS(adj, print_trace,marked);
+        recursive_dfs(adj, print_trace,marked);
       }
     }
   }
@@ -25,7 +25,7 @@ void Graph::recursive_DFS(dtype root, bool print_trace, std::map<dtype, bool> &m
   return;
 }
 
-void Graph::iterative_DFS(dtype root, bool print_trace) {
+void Graph::iterative_dfs(dtype root, bool print_trace) {
 
   std::map<dtype, bool> marked;
   std::stack<dtype> unseen_vertices;
@@ -65,7 +65,7 @@ void Graph::iterative_DFS(dtype root, bool print_trace) {
   return;
 }
 
-void Graph::DFS(dtype root, bool print_trace, bool recursive) { // if print, remove the last ->
+void Graph::dfs(dtype root, bool print_trace, bool recursive) { // if print, remove the last ->
   
   if (print_trace) {
     std::cout << "\nDFS with ";
@@ -77,11 +77,11 @@ void Graph::DFS(dtype root, bool print_trace, bool recursive) { // if print, rem
   }
 
   if (!recursive)
-    iterative_DFS(root, print_trace);
+    iterative_dfs(root, print_trace);
 
   else{
     std::map<dtype, bool> marked;
-    recursive_DFS(root, print_trace, marked);
+    recursive_dfs(root, print_trace, marked);
 
   }
 
@@ -92,7 +92,7 @@ void Graph::DFS(dtype root, bool print_trace, bool recursive) { // if print, rem
   return;
 }
 
-void Graph::iterative_DFS(dtype root, bool print_trace, std::set<dtype> &marked_set) {
+void Graph::iterative_dfs(dtype root, bool print_trace, std::set<dtype> &marked_set) {
 
   std::map<dtype, bool> marked;
   std::stack<dtype> unseen_vertices;
@@ -136,7 +136,7 @@ void Graph::iterative_DFS(dtype root, bool print_trace, std::set<dtype> &marked_
   return;
 }
 
-void Graph::BFS(dtype root, bool print_trace){
+void Graph::bfs(dtype root, bool print_trace){
 
   std::cout << "\nBFS:\n";
 
