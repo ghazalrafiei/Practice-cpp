@@ -13,7 +13,7 @@ int main() {
   my_graph.addEdge(2, 3);
   my_graph.addEdge(2, 4);
 
-  my_graph.DFS(0, true, false);
+  my_graph.dfs(0, true, false);
 
 
   my_graph.addVertex();
@@ -24,9 +24,9 @@ int main() {
 
   std::cout << my_graph;
 
-  my_graph.DFS(0, true, true);
-  my_graph.DFS(0, true, true);
-  my_graph.BFS(0, true);
+  my_graph.dfs(0, true, true);
+  my_graph.dfs(0, true, true);
+  my_graph.dfs(0, true);
 
   my_graph.deleteVertex(3);
 
