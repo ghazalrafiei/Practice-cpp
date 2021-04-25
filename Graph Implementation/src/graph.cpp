@@ -219,7 +219,7 @@ int Graph::connected_components(bool print_trace) {
       if (marked.find(*it) == marked.end()) {
 
         start = *it;
-        iterative_DFS(start, print_trace, marked);
+        iterative_dfs(start, print_trace, marked);
         n_components += 1;
 
       }
